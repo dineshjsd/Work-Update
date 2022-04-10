@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Links</title>
+    <style>
+        nav{
+            display: block;
+            background-color: #000;
+            padding: 5px;
+        }
+        ul li{
+            display: inline;
+            list-style: none;
+
+        }
+        ul li a{
+            text-decoration: none;
+            color: #fff;
+            margin-left: 5px;
+            text-transform: uppercase;
+        }
+        ul li a:link, a:visited{
+            background-color: red;
+
+        }
+        ul li a:hover, a:active{
+            background-color: green;
+        }
+
+
+    </style>
+</head>
+<body>
+    <nav>
+       <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="https://www.w3schools.com/html/" target="_self">HTML</a></li>
+        <li><a href="https://www.w3schools.com/css/" target="_blank">CSS</a></li>
+        <li><a href="https://www.w3schools.com/js/" target="_parent">JS</a></li>
+        <li><a href="https://reactjs.org/" target="_top">REACTJS</a></li>
+        <li><a href="mailto:dineshjsdc@gmail.com">Contact us</a></li>
+       </ul>
+    </nav>
+
+    <!-- button as a link  -->
+    <a href="https://www.w3schools.com/html/" target="_self">Visit HTML</a>
+</body>
+</html>
