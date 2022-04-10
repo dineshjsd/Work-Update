@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Table</title>
+    <style>
+        caption{
+            font-size: 20px;
+            font-weight: bold;
+        }
+        table{
+            width: 100%;
+        }
+        table,td,th{
+            border:1px solid black;
+            border-collapse: collapse;
+        }
+        th{
+            background-color: yellow;
+            padding: 5px;
+        }
+        tr:nth-child(odd){
+            background-color: gray;
+        }
+        td{
+            padding: 5px;
+        }
+        tr:hover{
+            background-color: #eee;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>Contact Details</caption>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Age</th>
+                <th>Phone No.</th>
+                <th>Address</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Dinesh</td>
+                <td>dinesh@gmail.com</td>
+                <td>23</td>
+                <td>8612345678</td>
+                <td>Vpo Dhansu</td>
+            </tr>
+            <tr>
+                <td>Mohit</td>
+                <td>mohit@gmail.com</td>
+                <td>24</td>
+                <td>9212345678</td>
+                <td> sector 23 ,Hisar</td>
+            </tr>
+            <tr>
+                <td>Abhishek</td>
+                <td>abhi@gmail.com</td>
+                <td>24</td>
+                <td>9812345678</td>
+                <td>Jind</td>
+            </tr>
+            <tr>
+                <td>Ajay</td>
+                <td>ajay@gmail.com</td>
+                <td>25</td>
+                <td>8712345678</td>
+                <td>Jind</td>
+            </tr>
+        </tbody>
+    </table>
+    <br/>
+    <br/>
+
+
+    <!-- colspan example -->
+    <table style="width:100%">
+        <tr>
+          <th colspan="2">Name</th>
+          <th>Age</th>
+        </tr>
+        <tr>
+          <td>Jill</td>
+          <td>Smith</td>
+          <td>50</td>
+        </tr>
+        <tr>
+          <td>Eve</td>
+          <td>Jackson</td>
+          <td>94</td>
+        </tr>
+      </table>
+
+      <br>
+      <br><br>
+      <!-- row span  -->
+      <table>
+        <tr>
+          <th>Name</th>
+          <td>Jill</td>
+        </tr>
+        <tr>
+          <th rowspan="2">Phone</th>
+          <td>555-1234</td>
+        </tr>
+        <tr>
+          <td>555-8745</td>
+      </tr>
+      </table>
+
+</body>
+</html>
