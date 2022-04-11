@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class Attribute</title>
+    <style>
+        .name{
+            text-transform: uppercase;
+            color: red;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .text{
+            background-color: #eee;
+            padding: 10px;
+
+        }
+        .job{
+            color: gray;
+
+        }
+    </style>
+</head>
+<body>
+    <h1 class="name">Dinesh Jsdc</h1>
+    <p class="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam suscipit, iusto illo eveniet labore explicabo dolor, harum ipsa temporibus, impedit doloribus sint. Ea dicta soluta voluptatum. Eum nobis numquam reprehenderit?</p>
+    
+    <!-- multi class  -->
+    <h2 class="name job"  >Full stack developer</h2>
+
+    <button onclick="changejob()">change job</button>
+
+    <!-- using class name in javascript -->
+    <script>
+        function changejob(){
+           var x = document.getElementsByClassName('job');
+           for (var i = 0; i < x.length; i++) {
+           x[i].innerHTML = "Front end developer";
+           }
+        }
+    </script>
+</body>
+</html>
