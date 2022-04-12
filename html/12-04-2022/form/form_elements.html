@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Elements</title>
+    <style>
+        form, fieldset{
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+            margin: auto;
+        }
+        fieldset{
+            width: 100%;
+        }
+        input{
+            margin-bottom: 10px;
+        
+        }
+        button{
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <form action="" method="post">
+        <h1>Registration form</h1>
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" placeholder="Dinesh Jsdc" required />
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="exmaple@gmail.com" required />
+
+        <label for="age">Age</label>
+        <input type="number" id="age" name="age" placeholder="23" />
+
+        <label for="phone">Phone Number</label>
+        <input type="tel" placeholder="8621234567" id="phone" name="phoneNo." required>
+
+        <label for="gender">Male</label>
+        <input type="radio" name="gender" value="male">
+        <label for="gender">Female</label>
+        <input type="radio" name="gender" value="female">
+
+        <label for="course">Course</label>
+        <select name="course" id="course">
+            <option value="frontend">Front-end Developer</option>
+            <option value="fullstack">Full Stack Developer</option>
+            <option value="datasc">Data Scientist</option>
+            <option value="appdev">Mobile app deve</option>
+        </select>
+        
+        <label for="inrto">Self intro</label>
+        <textarea name="intro" id="intro" cols="30" rows="10"></textarea>
+
+        <fieldset>
+            <legend>Address</legend>
+
+            <label for="homeno">Home/House/street no.</label>
+            <input type="text" placeholder="80" required id="homeno" />
+            
+            <label for="city">City</label>
+            <input type="text" placeholder="hisar" required id="city">
+
+            <label for="state">State</label>
+            <input type="text" list="states" id="sate" required>
+            <datalist id="states">
+                <option value="haryana">
+                <option value="Rajshthana">
+                <option value="Panjab">
+                <option value="Uttar Pardesh">
+                <option value="Himachal">
+            </datalist>
+
+            <label for="zip">Zip code</label>
+            <input type="number" placeholder="125005" required>
+        </fieldset>
+
+        <button>submit</button>
+    </form>
+</body>
+</html>
