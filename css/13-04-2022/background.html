@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Background</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: #eee;
+        }
+        nav{
+            display: block;
+            background-color: rgb(14, 13, 13);
+            padding: 10px;
+        }
+        nav li{
+            display: inline;
+            color: #fff;
+            margin: 5px;
+        }
+        .banner{
+            width: 80%;
+            height: 500px;
+            margin: auto;
+            margin-top: 20px;
+            background-image: url('./images/bg.jpg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+           
+        }
+        .text{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            color: #fff;
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 20px;
+
+        }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <li>Home</li>
+        <li>About</li>
+        <li>Contact</li>
+    </nav>
+    <div class="banner">
+      <div class="text">  <h1>Welcome</h1>
+        <p>Hi, nice to see you here</p></div>
+    </div>
+</body>
+</html>
