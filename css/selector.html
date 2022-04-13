@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selector</title>
+</head>
+<style>
+    /* universal selector */
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    /* element selector  */
+    nav{
+        display: block;
+        background-color: #444;
+        padding: 10px;
+    }
+    li{
+        display: inline-block;
+        margin: 5px;
+        color: white;
+    }
+    h1{
+        color: red;
+        text-align: center;
+    }
+    p{
+        color: gray;
+        text-align: center;
+    }
+    /* class selector */
+    .banner{
+        padding: 10px;
+        height: 200px;
+        background-color: #eee;
+    }
+    h1.banner-text{
+        color: #000;
+        font-size: 40px;
+    }
+    /* id selector */
+    #about{
+        background-color: #fff;
+        margin-top: 20px;
+        width: 80%;
+        padding: 10px;
+        margin: auto;
+    }
+</style>
+<body>
+    <nav>
+        <li>Home</li>
+        <li>About</li>
+        <li>Contact</li>
+    </nav>
+    <div class="banner">
+        <h1 class="banner-text">Welcome</h1>
+    </div>
+    <section id="about">
+        <h1>About</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto accusamus necessitatibus earum, tempora fugit modi? Vitae quos officiis placeat ratione voluptatem repudiandae! Natus eius dolorem quibusdam, facere qui suscipit! Totam.</p>
+    </section>
+</body>
+</html>
