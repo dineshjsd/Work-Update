@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Text</title>
+    <style>
+      h1 {
+        color: #ff0000;
+        background-color: #000;
+        text-align: center;
+      }
+      h2 {
+        color: #00f;
+        text-align: center;
+      }
+      .left{
+          text-align: left;
+      }
+      .right{
+          text-align: right;
+      }
+      .justify{
+          text-align: justify;
+      }
+      .last-align{
+          text-align-last: center; /* specifies how to align the last line of text. */
+      }
+      .rtl{
+          direction: rtl;
+          unicode-bidi: bidi-override;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>ADS</h1>
+    <h2>Affluence Digital Solution</h2>
+    <p class="left">Left text</p>
+    <p class="right">Right Text</p>
+    <p class="justify">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae illum
+      numquam autem, quis totam eos aspernatur ullam ut tempora? Molestias quis
+      suscipit distinctio hic sint molestiae quaerat praesentium? Ex, sint.
+    </p>
+
+    <p class="last-align">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat velit
+      iure sunt, libero, eius reprehenderit dolorum facere blanditiis dolorem
+      natus a ipsam odit atque cum. Quo pariatur a repellat eius.
+    </p>
+
+    <p>This is the default text direction.</p>
+    <p class="rtl">This is right to left text direction.</p>
+  </body>
+</html>

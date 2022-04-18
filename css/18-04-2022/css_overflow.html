@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS over flow</title>
+    <style>
+      div {
+        background-color: #eee;
+        width: 200px;
+        height: 200px;
+        margin: 20px;
+      }
+      .visible {
+        overflow: visible;
+      }
+      .hidden {
+        overflow: hidden;
+      }
+      .scroll {
+        overflow: scroll;
+      }
+      .auto {
+        overflow: auto;
+      }
+      .x-y {
+        overflow-y: scroll;
+        overflow-x: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="visible">
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur
+        ipsum a exercitationem dicta est dolorum sed explicabo voluptas facere
+        id, numquam, corporis autem. Totam non aut, officia dignissimos
+        laboriosam dolorum. Lorem ipsum dolor sit amet consectetur adipisicing
+        elit. Ipsum aut provident non nemo, eius voluptatibus similique!
+        Repudiandae neque laudantium libero id cupiditate obcaecati inventore
+        cumque enim reprehenderit, vitae voluptatibus animi?
+      </p>
+    </div>
+    <div class="auto">
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur
+        ipsum a exercitationem dicta est dolorum sed explicabo voluptas facere
+        id, numquam, corporis autem. Totam non aut, officia dignissimos
+        laboriosam dolorum. Lorem ipsum dolor sit amet consectetur adipisicing
+        elit. Ipsum aut provident non nemo, eius voluptatibus similique!
+        Repudiandae neque laudantium libero id cupiditate obcaecati inventore
+        cumque enim reprehenderit, vitae voluptatibus animi?
+      </p>
+    </div>
+    <div class="scroll">
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur
+        ipsum a exercitationem dicta est dolorum sed explicabo voluptas facere
+        id, numquam, corporis autem. Totam non aut, officia dignissimos
+        laboriosam dolorum. Lorem ipsum dolor sit amet consectetur adipisicing
+        elit. Ipsum aut provident non nemo, eius voluptatibus similique!
+        Repudiandae neque laudantium libero id cupiditate obcaecati inventore
+        cumque enim reprehenderit, vitae voluptatibus animi?
+      </p>
+    </div>
+    <div class="hidden">
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur
+        ipsum a exercitationem dicta est dolorum sed explicabo voluptas facere
+        id, numquam, corporis autem. Totam non aut, officia dignissimos
+        laboriosam dolorum. Lorem ipsum dolor sit amet consectetur adipisicing
+        elit. Ipsum aut provident non nemo, eius voluptatibus similique!
+        Repudiandae neque laudantium libero id cupiditate obcaecati inventore
+        cumque enim reprehenderit, vitae voluptatibus animi?
+      </p>
+    </div>
+    <div class="x-y">
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur
+        ipsum a exercitationem dicta est dolorum sed explicabo voluptas facere
+        id, numquam, corporis autem. Totam non aut, officia dignissimos
+        laboriosam dolorum. Lorem ipsum dolor sit amet consectetur adipisicing
+        elit. Ipsum aut provident non nemo, eius voluptatibus similique!
+        Repudiandae neque laudantium libero id cupiditate obcaecati inventore
+        cumque enim reprehenderit, vitae voluptatibus animi?
+      </p>
+    </div>
+  </body>
+</html>

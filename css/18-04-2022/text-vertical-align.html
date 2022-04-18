@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text verical Align</title>
+   <style>
+    span{
+        color:red;
+        /* background-color:black; */
+    }
+    span.a{
+        vertical-align: baseline;
+    }
+    span.b{
+        vertical-align: text-top;
+    }
+    span.c{
+        vertical-align: text-bottom;
+    }
+    span.d{
+        vertical-align: sub;
+    }
+    span.e{
+        vertical-align: super;
+    }
+
+
+   </style>
+</head>
+<body>
+    <h1>The vertical-align Property</h1>
+    <p>A text <span class="a">some text</span> with a default alignment</p>
+    <p>A text <span class="b">some text</span> with a text-top alignment</p>
+    <p>A text <span class="c">some text</span> with a text-bottom alignment</p>
+    <p>A text <span class="d">some text</span> with a sub alignment</p>
+    <p>A text <span class="e">some text</span> with a super alignment</p>
+</body>
+</html>

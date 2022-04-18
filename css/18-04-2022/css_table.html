@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Table</title>
+    <style>
+        table{
+            width: 100%;
+        }
+        caption{
+            font-size: 2em;
+        }
+        table, td, th{
+            /* border: 2px solid gray; */
+            border-collapse: collapse;
+            padding: 10px;
+        }
+        th{
+            background-color: #000;
+            color: #fff;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        tr:nth-child(even){
+            background-color: #eee;
+        }
+        tr:hover{
+            background-color: lawngreen;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>Contact Details</caption>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Age</th>
+                <th>Phone No.</th>
+                <th>Address</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Dinesh</td>
+                <td>dinesh@gmail.com</td>
+                <td>23</td>
+                <td>8612345678</td>
+                <td>Vpo Dhansu</td>
+            </tr>
+            <tr>
+                <td>Mohit</td>
+                <td>mohit@gmail.com</td>
+                <td>24</td>
+                <td>9212345678</td>
+                <td> sector 23 ,Hisar</td>
+            </tr>
+            <tr>
+                <td>Abhishek</td>
+                <td>abhi@gmail.com</td>
+                <td>24</td>
+                <td>9812345678</td>
+                <td>Jind</td>
+            </tr>
+            <tr>
+                <td>Ajay</td>
+                <td>ajay@gmail.com</td>
+                <td>25</td>
+                <td>8712345678</td>
+                <td>Jind</td>
+            </tr>
+        </tbody>
+    </table>
+    <br/>
+    <br/>
+
+
+   
+     
+
+</body>
+</html>
