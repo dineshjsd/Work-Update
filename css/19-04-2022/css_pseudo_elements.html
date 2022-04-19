@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Pseudo Elements</title>
+    <style>
+      p::first-line {
+        color: red;
+      }
+      p::first-letter {
+        color: yellow;
+        background-color: green;
+        padding: 5px;
+      }
+      h1::before {
+        content: "*";
+        color: red;
+      }
+      h1::after {
+       content: '*';
+       color: green;
+      }
+      ::marker{
+          color: blue;
+          font-size: 20px;
+      }
+      ::selection{
+          background-color: yellow;
+          color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CSS Pseudo Elements</h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus eum
+      consequuntur provident totam id reprehenderit aliquid nihil dolorem error
+      recusandae ullam autem repudiandae qui dolorum incidunt neque,
+      perspiciatis amet ipsum.
+    </p>
+    <ul>
+        <li>abc</li>
+        <li>abc</li>
+        <li>abc</li>
+        <li>abc</li>
+    </ul>
+  </body>
+</html>

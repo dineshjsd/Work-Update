@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Combinators</title>
+    <style>
+      /* descendant Selector  */
+      div p {
+        color: yellow;
+      }
+      /* child selector > */
+      div > {
+          color: red;
+      }
+      /* adjacent sibling selector  */
+      div + p{
+          color:blue;
+      }
+      /* general sibling selector ~ */
+      div ~ p{
+          color: green;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div>
+      <p>Some text</p>
+      <p>Some text</p>
+      <p>Some text</p>
+      <p>Some text</p>
+      <p>Some text</p>
+    </div>
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore non
+      rerum, nesciunt dolorum ipsam culpa. Saepe dolor vero optio iste est quos,
+      eaque voluptate, voluptatem repudiandae tempore placeat id rerum.
+    </p>
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore non
+      rerum, nesciunt dolorum ipsam culpa. Saepe dolor vero optio iste est quos,
+      eaque voluptate, voluptatem repudiandae tempore placeat id rerum.
+    </p>
+  </body>
+</html>

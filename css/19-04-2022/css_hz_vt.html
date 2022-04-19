@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Center elements</title>
+    <style>
+        .m-auto{
+            margin: auto;
+            width: 200px;
+            text-align: center;
+            border: 2px solid purple;
+        }
+        .p-abs{
+            border: 2px solid green;
+            height: 200px;
+            margin: 20px;
+            position: relative;
+        }
+        .p-abs  p{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            margin: 0;
+        }
+    </style>
+
+</head>
+<body>
+    <!-- center div using margin auto and text text-align  -->
+    <div class="m-auto">
+        <p>This div element is cented using margin auto</p>
+    </div>
+
+    <!-- center using postion absolute -->
+    <div class="p-abs">
+        <p>This div element is center using postion absolute and transform</p>
+    </div>
+</body>
+</html>

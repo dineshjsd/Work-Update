@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Navigationbar</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .nav-bar {
+        background-color: #fff;
+        width: 100%;
+        position: fixed;
+        box-shadow: 2px 2px 4px #ccc;
+        top: 0;
+        z-index: 1;
+      }
+      .nav-bar li {
+        display: inline-block;
+        list-style: none;
+      }
+      .nav-bar li a {
+        text-decoration: none;
+        padding: 10px;
+        display: block;
+        color: #000;
+        font-size: 20px;
+        font-weight: 500;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+      .nav-bar li a:hover {
+        background-color: #000;
+        color: #fff;
+      }
+      .main-sec {
+        float: left;
+      }
+      .ver-nav {
+        float: left;
+        height: 100vh;
+        position: relative;
+        width: 20%;
+        padding: 10px;
+        background-color: #eee;
+      }
+      .ver-nav ul {
+        list-style: none;
+        margin-top: 70px;
+      }
+      .ver-nav ul li{
+          margin: 10px;
+          font-family: Arial, Helvetica, sans-serif;
+          text-align: center;
+          padding: 5px;
+          cursor: pointer;
+      }
+      .ver-nav ul li:hover{
+        background-color: dodgerblue;
+          color: #fff;
+      }
+      .active{
+          background-color: dodgerblue;
+          color: #fff;
+      }
+      .right{
+          float: right;
+      }
+      article{
+          margin-left: 20%;
+          margin-top: 70px;
+          padding: 20px;
+          width: 70%;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="nav-bar">
+      <li><a href="#" class="active">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Serices</a></li>
+      <li><a href="#">Contact</a></li>
+      <li><a href="#" class="login">Login</a></li>
+    </nav>
+    <section class="main-sec">
+      <nav class="ver-nav">
+        <ul>
+          <li class="active">HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>ReactJs</li>
+          <li>NodeJs</li>
+        </ul>
+      </nav>
+
+      <article>
+        <h1>Heading</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
+          quaerat praesentium voluptates porro ratione tempore, veritatis hic
+          amet eligendi iure nobis reiciendis sit at provident excepturi dolore
+          cum? Ut, maxime.
+        </p>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia
+          soluta aperiam aliquam, nostrum optio facilis blanditiis aut tempore
+          ut harum consequuntur dolores ex. Assumenda ipsum, hic voluptatibus
+          reiciendis officiis ipsam.
+        </p>
+      </article>
+    </section>
+  </body>
+</html>
