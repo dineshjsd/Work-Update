@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Attribute Selectors</title>
+    <style>
+      /* css attribute selector */
+      a[target] {
+        background-color: yellow;
+      }
+      /* css attribute='value' selector  */
+      a[target="_top"] {
+        background-color: green;
+        color: white;
+      }
+      /* CSS [attribute~="value"] Selector */
+      [alt~="rose"] {
+        border: 5px solid red;
+      }
+      /* CSS [attribute|="value"] Selector */
+      [class|="top"] {
+        background: green;
+        color: white;
+      }
+      [class^="this"] {
+        background: green;
+        color: white;
+      }
+      [class$="test"] {
+        background: yellow;
+      }
+      [class*="te"] {
+        background: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CSS attribute Selector</h1>
+    <a href="#">Link 1</a>
+    <a href="#" target="_parent">Link 1</a>
+    <a href="#">Link 1</a>
+    <a href="#" target="_top">Link 1</a>
+    <br />
+    <img src="./images/rose2.jpg" alt="rose" width="200" height="200" />
+    <img src="./images/img1.jpg" alt="nature" width="200" height="200" />
+    <img src="./images/rose1.jpg" alt="rose" width="200" height="200" />
+
+    <h2>CSS [attribute|="value"] Selector</h2>
+
+    <h1 class="top-header">Welcome</h1>
+    <p class="top-text">Hello world!</p>
+    <p class="topcontent">Are you learning CSS?</p>
+
+    <h1>CSS [attribute^="value"] Selector</h1>
+    <h1 class="this-header">Welcome</h1>
+    <p class="this-text">Hello world!</p>
+    <p class="thiscontent">Are you learning CSS?</p>
+
+    <h2>CSS [attribute$="value"] Selector</h2>
+
+    <div class="first_test">The first div element.</div>
+    <div class="second">The second div element.</div>
+    <div class="my-test">The third div element.</div>
+    <p class="mytest">This is some text in a paragraph.</p>
+
+    <h2>CSS [attribute*="value"] Selector</h2>
+
+    <div class="first_test">The first div element.</div>
+    <div class="second">The second div element.</div>
+    <div class="my-test">The third div element.</div>
+    <p class="mytest">This is some text in a paragraph.</p>
+  </body>
+</html>
