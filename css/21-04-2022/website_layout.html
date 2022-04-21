@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Website Layout</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 10px;
+        background-color: #f1f1f1;
+      }
+      header {
+        text-align: center;
+        padding: 30px;
+        background-color: #fff;
+      }
+      nav {
+        background-color: #303030;
+      }
+      nav li {
+        display: inline-block;
+        list-style: none;
+        margin-left: 5px;
+      }
+      nav li a {
+        display: block;
+        color: #fff;
+        text-decoration: none;
+        padding: 10px;
+      }
+      nav li a:hover {
+        background-color: #000;
+      }
+      section {
+        float: left;
+        width: 70%;
+      }
+      main {
+        background-color: #fff;
+        padding: 20px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+      main h1 {
+        text-transform: uppercase;
+      }
+      .img {
+        background-color: #ccc;
+        width: 100%;
+        padding: 10px;
+        height: 200px;
+      }
+      aside {
+        float: left;
+        width: 29%;
+        margin-left: 10px;
+        margin-top: 10px;
+      }
+      .card {
+        background-color: #fff;
+        padding: 20px;
+        margin-bottom: 10px;
+      }
+      footer {
+        clear: both;
+        background-color: #303030;
+        padding: 30px;
+        text-align: center;
+        color: #fff;
+      }
+      span {
+        color: red;
+      }
+      @media screen and (max-width: 800px) {
+        section,
+        aside {
+          width: 100%;
+          padding: 0;
+        }
+        aside {
+          margin: 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- header start -->
+    <header>
+      <h1>My Website</h1>
+      <p>This is basic Website layout design.</p>
+    </header>
+    <nav>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Service</a></li>
+      <li><a href="#">Contact</a></li>
+    </nav>
+
+    <section>
+      <main>
+        <h1>Title Heading</h1>
+        <p>Title description, Apr 21, 2022</p>
+        <div class="img">
+          <p>Image</p>
+        </div>
+      </main>
+      <main>
+        <h1>Title Heading</h1>
+        <p>Title description, Apr 21, 2022</p>
+        <div class="img">
+          <p>Image</p>
+        </div>
+      </main>
+    </section>
+    <aside>
+      <div class="card">
+        <h1>About</h1>
+        <div class="img">image</div>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias
+          illum a accusamus est, consequuntur fugiat ab rerum quibusdam totam
+        </p>
+      </div>
+      <div class="card">
+        <h1>Service</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias
+          illum a accusamus est, consequuntur fugiat ab rerum quibusdam totam
+        </p>
+      </div>
+    </aside>
+
+    <!-- footer start  -->
+    <footer>
+      <h1>Footer</h1>
+      <p>Made with <span>&hearts;</span> Dinesh Jsdc</p>
+    </footer>
+  </body>
+</html>

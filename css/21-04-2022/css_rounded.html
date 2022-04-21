@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Rounded Corner</title>
+    <style>
+        .emoji{
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background-color: yellow;
+            position: relative;
+        }
+        .eye{
+            background-color: black;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            display: inline-block;
+            margin: 20px;
+            position: absolute;
+            top: 20%;
+        }
+        .e2{
+            right: 7%;
+        }
+        .mouth{
+            background-color: transparent;
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            position: absolute;
+            top: 10%;
+            left: 10%;
+            box-shadow: 4px 4px 0px red;
+            transform: rotate(44deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="emoji">
+        <div class="eye e1"></div>
+        <div class="eye e2"></div>
+        <div class="mouth"></div>
+    </div>
+</body>
+</html>
