@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Border image</title>
+    <style>
+      #border-img1 {
+        border: 10px solid transparent;
+        padding: 15px;
+        border-image: url('./images/gold-border.png') 30% round;
+        
+      }
+      #border-img2 {
+        border: 10px solid transparent;
+        padding: 15px;
+        border-image: url('./images/border1.jpg') 50 round;
+        
+      }
+    </style>
+  </head>
+  <body>
+    <h1>The border image property</h1>
+    <p id="border-img1">Border Image</p>
+    <p id="border-img2">Border Image</p>
+  </body>
+</html>
