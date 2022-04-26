@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Image Styling</title>
+    <style>
+      img.rd-8px {
+        border-radius: 8px;
+        width: 200px;
+        height: auto;
+      }
+      .img-circle {
+        border-radius: 50%;
+        width: 200px;
+        height: 200px;
+      }
+      /* styling the .thumbnail */
+      .thumbnail {
+        width: 200px;
+        height: auto;
+        padding: 5px;
+        border: 1px solid #ddd;
+      }
+      .thumbnail:hover {
+        box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+      }
+      /* styling .responsive  */
+      .responsive {
+        width: 100%;
+        height: auto;
+      }
+      /* styling center-img  */
+      .center-img {
+        width: 50%;
+        height: auto;
+        display: block;
+        margin: auto;
+      }
+      /* styling polaroid image card */
+      div.polaroid {
+        width: 80%;
+        background-color: #fff;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+          0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        margin: auto;
+
+        margin-bottom: 100px;
+      }
+      div.content {
+        text-align: center;
+        padding: 10px 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Rounded Image</h1>
+    <img src="../22-04-2022/images/lookup.jpg" class="rd-8px" alt="" />
+    <img src="../22-04-2022/images/lookup.jpg" class="img-circle" alt="" />
+
+    <!-- thumbnail  -->
+    <h1>Thumbnail Image</h1>
+    <img src="../22-04-2022/images/hero.jpg" class="thumbnail" alt="" />
+
+    <h1>Resposive Image</h1>
+    <img src="../22-04-2022/images/hero2.jpg" class="responsive" alt="" />
+
+    <h1>Center Image</h1>
+    <img src="../22-04-2022/images/butterfly.png" class="center-img" alt="" />
+
+    <!-- polaroid images/Cards  -->
+    <h1>Polaroid Image / Cards</h1>
+    <div class="polaroid">
+      <img
+        src="../19-04-2022/images/rose2.jpg"
+        style="width: 100%"
+        alt="cat with rose"
+      />
+      <div class="content">
+        <p>Cat with Rose</p>
+      </div>
+    </div>
+  </body>
+</html>

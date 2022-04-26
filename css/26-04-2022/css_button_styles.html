@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Buttons Styles</title>
+    <style>
+        /* style all buttons */
+        button{
+            float: left;
+            margin: 10px;
+            outline: none;
+            border: none;
+            padding: 10px 20px;
+            font-size: large;
+            font-weight: 700;
+            cursor: pointer;
+        }
+
+        .btn1{
+            background-color: green;
+            color: white;
+        }
+        .btn1:hover{
+            box-shadow: 2px 2px 8px rgb(59, 58, 58);
+        }
+        .btn2{
+            background-color: red;
+            color: white;
+        }
+        .btn2:hover{
+            transform: translateY(2px);
+        }
+        .btn3{
+            background-color: dodgerblue;
+            color: white;
+            border: 2px solid transparent;
+        }
+        .btn3:hover{
+            background-color: white;
+            color: dodgerblue;
+            border: 2px solid dodgerblue;
+        }
+        .btn4{
+            background-color: purple;
+            color: wheat;
+            opacity: 0.8;
+        }
+        .btn4:hover{
+            opacity: 1;
+        }
+        .btn5:hover{
+            background-color: black;
+            color: white;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>CSS Buttons Style</h1>
+    <button class="btn1">
+        Click
+    </button>
+    <button class="btn2">
+        Click
+    </button>
+    <button class="btn3">
+        Click
+    </button>
+    <button class="btn4">
+        Click
+    </button>
+    <button class="btn5">
+        Click
+    </button>
+</body>
+</html>
