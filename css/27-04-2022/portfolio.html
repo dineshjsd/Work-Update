@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <!-- link material icon  -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <!-- nav bar start here -->
+      <nav>
+        <li>
+          <img src="./images/avatar_smoke.jpg" alt="men smoking avatar" />
+        </li>
+        <li>
+          <i class="material-icons">home</i>
+          <a href="#home">Home</a>
+        </li>
+        <li>
+          <i class="material-icons">person</i>
+          <a href="#about">About</a>
+        </li>
+        <li>
+          <i class="material-icons">photo_library</i>
+          <a href="#gallery">Gallery</a>
+        </li>
+        <li>
+          <i class="material-icons">email</i>
+          <a href="#contact">Contact</a>
+        </li>
+      </nav>
+      <!-- nav bar end -->
+
+      <!-- main content area start  -->
+      <main>
+        <!-- home section start  -->
+        <section id="home">
+          <h1>Your Name</h1>
+          <p>Photographer and web Designer</p>
+        </section>
+
+        <!-- about section start  -->
+        <section id="about">
+          <h2>Your Name</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos
+            quisquam mollitia earum qui, sapiente voluptatibus amet quis quaerat
+            architecto, ipsum asperiores at eum tempore aut quod illum beatae
+            sit consequuntur.
+          </p>
+          <h2>Skills</h2>
+          <div class="skills">
+            <label for="photo">Photography</label>
+            <input id="photo" type="range" />
+
+            <label for="web">Web Design</label>
+            <input id="web" type="range" />
+
+            <label for="photoshop">Photoshop</label>
+            <input id="photoshop" type="range" />
+          </div>
+
+          <button>
+            <i class="material-icons">file_download</i>
+            Download Resume
+          </button>
+        </section>
+
+        <!-- Gallery section start  -->
+        <section id="gallery">
+            <h2>My Photos</h2>
+            <div class="wraper">
+                <img src="../22-04-2022/images/hero.jpg" alt="" width="200px">
+                <img src="../22-04-2022/images/hero.jpg" alt="" width="200px">
+                <img src="../22-04-2022/images/hero.jpg" alt="" width="200px">
+                <img src="../22-04-2022/images/hero.jpg" alt="" width="200px">
+                <img src="../22-04-2022/images/hero.jpg" alt="" width="200px">
+                <img src="../22-04-2022/images/hero.jpg" alt="" width="200px">
+                <img src="../22-04-2022/images/hero.jpg" alt="" width="200px">
+            </div>
+        </section>
+
+        <!-- contact section start  -->
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <li>
+                <i class="material-icons">location_on</i>
+                Hisar, Haryanan
+            </li>
+            <li>
+                <i class="material-icons">email</i>
+                example@gmail.com
+            </li>
+            <li>
+                <i class="material-icons">phone</i>
+                +91 1234567890
+            </li>
+            <form action="">
+                <p>Let's get in touch. Send me a message</p>
+                <input type="text" placeholder="Name" required>
+                <input type="email" placeholder="Email" required>
+                <input type="text" placeholder="subject" required>
+                <input type="text" placeholder="Message">
+                <button> 
+                    <i class="material-icons">send</i>
+                </button>
+            </form>
+
+            <div class="social-links">
+                <i class="material-icons">facebook</i>
+                <i class="material-icons">instagram</i>
+                <i class="material-icons">twiter</i>
+                <i class="material-icons">pintrest</i>
+            </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
