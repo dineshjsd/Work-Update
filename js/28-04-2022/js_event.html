@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Event</title>
+</head>
+<body>
+    <h1>JS Event</h1>
+    <button onclick="this.innerHTML = Date()">what is time?</button>
+    <h1 id="h1">Hellow World</h1>
+    <button onclick="changeText()">change text</button>
+    <h1 onmouseover="alert(hi)">Mouse over me</h1>
+
+    <script>
+        function changeText(){
+           var h1 = document.getElementById("h1");
+           h1.innerHTML = "Event";
+        }
+    </script>
+</body>
+</html>
