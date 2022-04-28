@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Variables</title>
+</head>
+<body>
+    <h1>JS Variables</h1>
+    <p id="sum"></p>
+    <p id="prod"></p>
+    <p id="div"></p>
+
+    <script>
+        // decalaring variables using var 
+        var a = 5;
+        var b = 6;
+        var c = a + b;
+        var sum = document.getElementById('sum');
+        var prod = document.getElementById('prod');
+        var div = document.getElementById('div');
+        sum.innerHTML = c;
+
+        // decalaring variables using let 
+        let x = 40;
+        let y = 50;
+        let z = 40*50;
+        prod.innerHTML = z;
+
+        // decalaring variables using const 
+        const price1 = 50;
+        const price2 = 90;
+        const total = price1 + price2;
+        div.innerHTML = total;
+        
+
+
+    </script>
+</body>
+</html>
