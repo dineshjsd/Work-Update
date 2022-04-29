@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS Array methods</title>
+  </head>
+  <body>
+    <h1>JS Array methods</h1>
+
+    <script>
+      const fruits = ["Banana", "Orange", "Apple", "Mango"];
+      console.log("Fruits:", fruits);
+      // convert array to string
+      console.log("Strig: ", fruits.toString());
+      // join method
+      console.log("String with join:", fruits.join("*"));
+
+      //add new item
+      fruits.push("WaterMelon");
+      console.log("after push:", fruits);
+      //remove item
+      fruits.pop();
+      console.log("after pop:", fruits);
+      // shirfting
+      fruits.shift();
+      console.log("after shift:", fruits); // first item remove
+
+      fruits.unshift("Lemon"); // add new item at beginning
+      console.log("after unshift", fruits);
+
+      const myGirls = ["Cecilie", "Lone"];
+      const myBoys = ["Emil", "Tobias", "Linus"];
+      console.log(myGirls);
+      console.log(myBoys);
+
+      const myChildren = myGirls.concat(myBoys);
+      console.log('Array after cconcat:', myChildren);
+
+      fruits.splice(2, 0, 'Guava', 'kiwi'); // add new items
+      console.log('after splice:',fruits);
+
+      console.log(fruits.slice(1)); // slice out 
+    </script>
+  </body>
+</html>
