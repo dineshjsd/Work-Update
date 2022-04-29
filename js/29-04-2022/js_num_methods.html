@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS NUmber Methods</title>
+  </head>
+  <body>
+    <h1>JS Number Methods</h1>
+
+    <script>
+      let num = 123;
+      console.log(num.toString()); // convert number to string
+      console.log('Expontial form of 90.656:', (90.656).toExponential()); // return  as string with rounded using exponetial notation
+      console.log(9.767.toFixed(2)); // return string with spcified number of decimals
+      console.log('toPrecision(2):',9.567.toPrecision(2));
+      console.log((123).valueOf());
+      console.log('Number for true in js: ', Number(true)); // return number
+      console.log('Number for false in js: ', Number(false)); // return number
+      console.log(Number('10.33'));
+      console.log(Number(new Date()))
+
+      //parseInt() Method
+      console.log(parseInt("-10.33"));
+      //parFloat() Methods
+      console.log(parseFloat("100.55"));
+
+    //   JavaScript MIN_VALUE and MAX_VALUE 
+    console.log('Min value:', Number.MIN_VALUE);
+    console.log('Max value:', Number.MAX_VALUE);
+
+    console.log('Positive Infinity', Number.POSITIVE_INFINITY);
+    console.log('Negtive infinity', Number.NEGATIVE_INFINITY);
+    
+
+
+    </script>
+  </body>
+</html>
