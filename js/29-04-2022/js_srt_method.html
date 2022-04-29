@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS Srting Methods</title>
+  </head>
+  <body>
+    <h1>JS Srting Methods</h1>
+
+    <script>
+      let str = "Apple, Banana, Kiwi";
+      // length of string
+      console.log("length of string is", str.length);
+      // slice method
+      console.log("slice 7 to 13:", str.slice(7, 13));
+      //sub string method
+      console.log("substring:", str.substring(7, 13));
+      // substr method
+      console.log("substr:", str.substr(7, 6));
+      // replacing string content
+      console.log(
+        "string after replaceing",
+        str.replace("Apple", "Watermelon")
+      );
+      // convert to uppercase
+      let strup = str.toUpperCase();
+      console.log("uppercase: ", strup);
+      // convert to lowercase
+      let strlow = str.toLowerCase();
+      console.log("lowercase: ", strlow);
+
+      let txt1 = "Dinesh";
+      let txt2 = "Jsdc";
+      let fullname = txt1.concat(" ", txt2); // concat string
+      console.log(fullname);
+
+      let text = "     hellow world";
+
+      console.log(text.trim()); // tring string
+
+      let nopadstr = "5";
+      // padStrart method
+      let padstr = nopadstr.padStart(4, "0");
+      console.log(padstr);
+      // padEnd() method
+      console.log(nopadstr.padEnd(4, "x"));
+
+      console.log("char at 0:", str.charAt(0)); // give chararcter at 0 position
+      console.log("unicode of char at 0:", str.charCodeAt(0));
+
+      //   split string
+      let arraystr = str.split(",");
+      console.log("array of string", arraystr);
+    </script>
+  </body>
+</html>
