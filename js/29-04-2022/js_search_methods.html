@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js Search Methods</title>
+</head>
+<body>
+    <h1>Js Search Methods</h1>
+
+    <script>
+        let str = 'In this section we learn search methods, search';
+        console.log('str: ', str);
+        // index of search 
+        console.log('index of first occurrence of search is', str.indexOf('search'));
+
+        // last occurrence index 
+        console.log('last occure search index:', str.lastIndexOf('search'));
+        // seach method
+        console.log('index of search is :', str.search('search'));
+
+        // match method
+        console.log(str.match(/sea/g));
+
+
+    </script>
+</body>
+</html>
