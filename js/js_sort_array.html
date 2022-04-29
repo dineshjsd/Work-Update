@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sortin an array</title>
+  </head>
+  <body>
+    <h1>Sorting an array</h1>
+
+    <script>
+      const fruits = ["Banana", "Orange", "Apple", "Mango"];
+      console.log("unsroted:", fruits);
+      console.log("Sorted array:", fruits.sort()); // sort array
+      console.log("Reverse array:", fruits.reverse()); //  reverse array
+
+      const num = [40, 100, 1, 5, 25, 10];
+      console.log('num:', num);
+      // sort array in ascending order
+      num.sort(function (a, b) {
+        return a - b;
+      });
+      console.log('ascending:', num);
+      // sort array in descending order
+      num.sort(function (a, b) {
+        return b - a;
+      });
+      console.log('descending:', num);
+    </script>
+  </body>
+</html>
