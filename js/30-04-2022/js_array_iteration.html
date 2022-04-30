@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS Array Iteration</title>
+  </head>
+  <body>
+    <h1>JS Array Iteration</h1>
+
+    <script>
+      const num = [10, 40, 60, 4, 56, 4];
+      let txt = "";
+      num.forEach(myFun); // forEach() method
+      console.log("Numbers: ", txt);
+
+      function myFun(value) {
+        txt += "\n" + value;
+      }
+
+      console.log("number multiply by 2: ", num.map(mul2)); //map() method
+
+      function mul2(value) {
+        return value * 2;
+      }
+
+      //   filter array
+      function filternum(value) {
+        return value > 18;
+      }
+      console.log("Number greater than 18", num.filter(filternum));
+
+      // reduce array method, finding sum of array
+      function sum(total, value) {
+        return total + value;
+      }
+      console.log("Sum of numbers:", num.reduce(sum));
+
+      // array every() method pass a test
+      function test(value) {
+        return value > 18;
+      }
+      console.log("Is greater than 18", num.every(test));
+
+      // some method pass a test
+      function greater18(value) {
+        return value > 18;
+      }
+      console.log("Is greater than 18:", num.some(greater18));
+
+      // position of 40
+      console.log("Position of 40:", num.indexOf(40));
+
+      // last indexof
+      const fruits = ["Apple", "Orange", "Apple", "Mango"];
+      let position = fruits.lastIndexOf("Apple") + 1;
+      console.log("Position of Apple", position);
+
+      // find method
+      function myFind(value) {
+        return value > 18;
+      }
+      console.log("Greater than 18:", num.find(myFind));
+
+      function findindx(value) {
+        return value > 18;
+      }
+      console.log("Greater than 18 number index:", num.findIndex(findindx));
+
+      //   array keys()
+      const keys = fruits.keys();
+      let text = '';
+
+      for (let x of keys) {
+        text += x + '\n';
+      }
+      console.log('Keys of fruits array:', text);
+
+      // entries method
+      const f = fruits.entries();
+
+      for(let x of f){
+          console.log(x);
+      }
+    //   check if a item inculde in array 
+    console.log('Is Mango in fruits array:', fruits.includes('Mango'));
+    </script>
+  </body>
+</html>
