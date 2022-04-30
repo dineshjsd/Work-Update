@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS Logical Operators</title>
+  </head>
+  <body>
+    <h1>JS Logical Operators</h1>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+
+    <script>
+      let x = 6;
+      let y = 3;
+      //   and operator
+      document.getElementById("demo").innerHTML =
+        (x < 10 && y > 1) + "<br>" + (x < 10 && y < 1);
+
+      // or operator
+      document.getElementById("demo1").innerHTML =
+        (x < 10 || y > 1) + "<br>" + (x < 10 || y < 1);
+
+      // not operator
+      document.getElementById("demo2").innerHTML =
+        !(x === y);
+    </script>
+  </body>
+</html>

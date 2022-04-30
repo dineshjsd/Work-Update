@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS If else</title>
+  </head>
+  <body>
+    <h2>JavaScript if .. else</h2>
+
+    <p>A time-based greeting:</p>
+
+    <p id="demo"></p>
+
+    <script>
+      const time = new Date().getHours(); // get hours
+      let greeting;
+      if (time < 10) {
+        greeting = "Good morning &#127749;";
+      } else if (time < 20) {
+        greeting = "Good day &#127749;";
+      } else {
+        greeting = "Good evening &#127751;";
+      }
+      document.getElementById("demo").innerHTML =  greeting;
+    </script>
+  </body>
+</html>
