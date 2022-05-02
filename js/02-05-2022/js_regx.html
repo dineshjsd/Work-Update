@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Regular Expression</title>
+</head>
+<body>
+    <h1>JS Regular Expression</h1>
+
+    <script>
+        let txt = 'Hi my name is Dinesh Jsdc';
+        // search with regular expression
+        let n = txt.search(/dinesh/i);
+        console.log('Position: ', n);
+
+        // replace with regular expression 
+        let rep = txt.replace(/jsdc/i, 'Bholan');
+
+        console.log("String replace:", rep);
+    </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Sets</title>
+</head>
+<body>
+    <h1>JS Sets</h1>
+
+    <script>
+        // create set 
+        const letters = new Set(['a', 'b', 'c']);
+
+        // add value to the set
+        letters.add('d');
+        letters.add('e');
+        letters.add('f');
+        letters.add('g');
+        letters.add('h');
+
+        // display each elements of set
+        let txt = '';
+        letters.forEach( function(value){
+            txt += value + ' ';
+        })
+        console.log('set elements:', txt);
+
+        console.log(letters.values()); // returns [object Set Iterator]
+    </script>
+</body>
+</html>

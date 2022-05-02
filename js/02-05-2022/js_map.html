@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS Map</title>
+  </head>
+  <body>
+    <h1>JS Map</h1>
+
+    <script>
+      // create map
+      const fruits = new Map();
+
+      // Set Map Values
+      fruits.set("apples", 500);
+      fruits.set("bananas", 300);
+      fruits.set("oranges", 200);
+
+      console.log(fruits);
+
+      // get method
+      console.log("apples: ", fruits.get("apples")); // return value of key
+
+      console.log("map size:", fruits.size); // size of map
+
+      fruits.delete("apples"); // delete apples from fruits
+      console.log(fruits);
+
+      console.log("Is apple in fruits: ", fruits.has("apples"));
+    </script>
+  </body>
+</html>
