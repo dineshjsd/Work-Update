@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS Object</title>
+  </head>
+  <body>
+    <h1>JS Object</h1>
+
+    <script>
+      // create object using object literal
+      const person = {
+        firstName: "John",
+        lastName: "Doe",
+        age: 50,
+        eyeColor: "blue",
+      };
+
+      // create object using keyword new
+      const person2 = new Object();
+      person.firstName = "John";
+      person.lastName = "Doe";
+      person.age = 50;
+      person.eyeColor = "blue";
+
+      console.log(person.name + person.lastName);
+
+      // looping through object
+      let txt = '';
+      for(let x in person){
+          txt += person[x];
+      }
+      // adding propertyy in object
+      person.nationality = "indian";
+      // delete property
+      delete person.age;
+      
+    </script>
+  </body>
+</html>

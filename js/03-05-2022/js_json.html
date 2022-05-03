@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS JSON</title>
+  </head>
+  <body>
+    <h1>JS JSON</h1>
+
+    <p id="demo"></p>
+
+    <script>
+      // create json object
+      let text =
+        '{"employees":[' +
+        '{"firstName":"John","lastName":"Doe" },' +
+        '{"firstName":"Dinesh","lastName":"Jsdc" },' +
+        '{"firstName":"Peter","lastName":"Jones" }]}';
+
+      const obj = JSON.parse(text);
+      document.getElementById("demo").innerHTML =
+        obj.employees[1].firstName + " " + obj.employees[1].lastName;
+    </script>
+  </body>
+</html>
