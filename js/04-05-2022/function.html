@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS Function</title>
+  </head>
+  <body>
+    <h1>JS Function</h1>
+    <p>Finding the largest number.</p>
+    <p id="demo"></p>
+
+    <script>
+      // create function
+      function myFunc() {
+        return "Helo console";
+      }
+      // invoke function
+      console.log(myFunc());
+
+      // function with argument
+      function multiply(a, b) {
+        return a * b;
+      }
+      console.log("2 * 5 =", multiply(2, 5));
+
+      // function to create largest number
+      function findMax() {
+        let max = -Infinity;
+        for (let i = 0; i < arguments.length; i++) {
+          if (arguments[i] > max) {
+            max = arguments[i];
+          }
+        }
+        return max;
+      }
+      document.getElementById("demo").innerHTML = findMax(4, 5, 6);
+    </script>
+  </body>
+</html>

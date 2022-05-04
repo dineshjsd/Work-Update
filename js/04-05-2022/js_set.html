@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS Set</title>
+  </head>
+  <body>
+    <h1>JS Set</h1>
+
+    <script>
+      // create set
+      const letters = new Set();
+
+      // add items in set
+      letters.add("a");
+      letters.add("b");
+      letters.add("c");
+
+      // display set in consloe
+      console.log(letters);
+
+      //   forEach methos in set
+      let text = "";
+      letters.forEach(function (value) {
+        text += " " + value;
+      });
+      console.log(text);
+
+      // value method, return [object set iterator]
+      console.log("Value method", letters.values());
+
+      // keys()
+      console.log("Keys", letters.keys());
+
+      // entries method
+      let txt = "";
+      const myIterator = letters.entries();
+      for (const entry of myIterator) {
+        txt += entry;
+      }
+      console.log(txt);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS Object Constructors</title>
+  </head>
+  <body>
+    <h1>JS Object Constructors</h1>
+
+    <script>
+      // Constructor function for Person objects
+      function Person(first, last, age, eye) {
+        this.firstName = first;
+        this.lastName = last;
+        this.age = age;
+        this.eyeColor = eye;
+      }
+
+      // Create two Person objects
+      const myFather = new Person("Jagdish", "Bholan", 45, "black");
+      const myMother = new Person("Sushila", "Bholan", 40, "black");
+
+      // Display 
+      console.log('My father name is ' + myFather.firstName + " and he age is " + myFather.age);
+      console.log('My father name is ' + myMother.firstName + " and he age is " + myMother.age);
+
+    </script>
+  </body>
+</html>
