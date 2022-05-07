@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS Event</title>
+  </head>
+  <body>
+    <div
+      onmouseover="mOver(this)"
+      onmouseout="mOut(this)"
+      style="
+        background-color: #38d960;
+        width: 120px;
+        height: 20px;
+        padding: 40px;
+        color: #fff;
+      "
+    >
+      Mouse Over Me
+    </div>
+
+    <div
+      onmousedown="mDown(this)"
+      onmouseup="mUp(this)"
+      style="
+        background-color: #d94a38;
+        width: 90px;
+        height: 20px;
+        padding: 40px;
+        margin-top: 20px;
+      "
+    >
+      Click Me
+    </div>
+
+    <script>
+      function mOver(obj) {
+        obj.innerHTML = "Thank You";
+      }
+
+      function mOut(obj) {
+        obj.innerHTML = "Mouse Over Me";
+      }
+
+      function mDown(obj) {
+        obj.style.backgroundColor = "#1ec5e5";
+        obj.innerHTML = "Release Me";
+      }
+
+      function mUp(obj) {
+        obj.style.backgroundColor = "#D94A38";
+        obj.innerHTML = "Thank You";
+      }
+    </script>
+  </body>
+</html>
