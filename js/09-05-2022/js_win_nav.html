@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS Window Navgator</title>
+  </head>
+  <body>
+    <h1>JS Window Navgator</h1>
+
+    <p id="demo"></p>
+
+    <script>
+      document.getElementById("demo").innerHTML =
+        "cookiesEnabled is " +
+        navigator.cookieEnabled + "<br>" +
+        "navigator.appName is " +
+        navigator.appName + "<br>" +
+        "navigator.appCodeName is " +
+        navigator.appCodeName + "<br>" +
+        "navigator.product is " +
+        navigator.product + "<br>" +
+        "Version" +
+        navigator.appVersion + "<br>" +
+        "Agent" +
+        navigator.userAgent + "<br>" +
+        "Platform" +
+        navigator.platform + "<br>" +
+        "Language" +
+        navigator.language + "<br>" +
+        "Is online " +
+        navigator.onLine + "<br>" +
+        " is Java Enabled " +
+        navigator.javaEnabled();
+    </script>
+  </body>
+</html>

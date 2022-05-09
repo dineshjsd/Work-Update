@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS Window Screen</title>
+  </head>
+  <body>
+    <h1>JS Window Screen</h1>
+
+    <p id="demo"></p>
+
+    <script>
+      document.getElementById("demo").innerHTML =
+        "Screen Width: " + 
+        screen.width + "<br>" +
+        "Screen Height: " +
+        screen.height + "<br>" +
+        "Available Screen Width: " +
+        screen.availWidth + "<br>" +
+        "Available Screen Height: " +
+        screen.availHeight + "<br>" +
+        "Screen Color Depth: " +
+        screen.colorDepth + "<br>" +
+        "Screen Pixel Depth: " +
+        screen.pixelDepth;
+    </script>
+  </body>
+</html>
