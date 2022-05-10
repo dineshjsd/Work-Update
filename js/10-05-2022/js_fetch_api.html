@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS Fetch API</title>
+  </head>
+  <body>
+    <h1>JS Fetch API</h1>
+
+    <p id="demo">Fetch a file to change this text.</p>
+
+    <script>
+      getText("demo.txt");
+
+      async function getText(file) {
+        let myObject = await fetch(file);
+        let myText = await myObject.text();
+        document.getElementById("demo").innerHTML = myText;
+      }
+    </script>
+  </body>
+</html>
