@@ -1,41 +1,52 @@
 import React, { useState } from "react";
 import "./ExpenseForm.css";
 function ExpenseForm() {
-//   const [enterdTitle, setEnteredTitle] = useState("");
-//   const [enterdAmount, setEnteredAmount] = useState("");
-//   const [enterdDate, setEnteredDate] = useState("");
+  const [enterdTitle, setEnteredTitle] = useState("");
+  const [enterdAmount, setEnteredAmount] = useState("");
+  const [enterdDate, setEnteredDate] = useState("");
 
-const [userInput, setUserInput] = useState({
-    enteredTitle: '',
-    enteredAmount: '',
-    enteredDate: '',
-  });
+// const [userInput, setUserInput] = useState({
+//     enteredTitle: '',
+//     enteredAmount: '',
+//     enteredDate: '',
+//   });
 
   // function to change title
   const titleChangeHandler = (event) => {
-    // setEnteredTitle(event.target.value);
-    // console.log(enterdTitle);
-   setUserInput({
-      ...userInput,
-      enteredTitle: event.target.value,
-    });
-    setUserInput((prevState) => {
-        console.log(prevState);
-      return { ...prevState, enteredTitle: event.target.value };
+    setEnteredTitle(event.target.value);
+//    setUserInput({
+//       ...userInput,
+//       enteredTitle: event.target.value,
+//     });
+//     setUserInput((prevState) => {
+//         console.log(prevState);
+//       return { ...prevState, enteredTitle: event.target.value };
       
-    });
+//     });
   };
-  // function to change title
+  // function to change amount
   const amountChangeHandler = (event) => {
-    // setEnteredAmount(event.target.value);
+    setEnteredAmount(event.target.value);
   };
-  // function to change title
+  // function to change date
   const dateChangeHandler = (event) => {
-    // setEnteredDate(event.target.value);
+    setEnteredDate(event.target.value);
   };
 
+  // function to handle form submission submitHandler
+  const submitHandler = (event) => {
+      event.preventDefault();
+
+      const expenseData = {
+          title: enterdTitle,
+          amount: enterdAmount,
+          date : new Date(enterdDate)
+      }
+      console.log(expenseData)
+  }
+
   return (
-    <form>
+    <form onSubmit={submitHandler}>
       <div className="new-expense__controls">
         <div className="new-expense__control">
           <label>Title</label>
