@@ -61,7 +61,7 @@ const BasicForm = (props) => {
           <label htmlFor='name'>First Name</label>
           <input
             type='text'
-            id='name'
+            id='fname'
             value={firstNameValue}
             onChange={firstNameChangeHandler}
             onBlur={firstNameBlurHandler}
@@ -72,7 +72,7 @@ const BasicForm = (props) => {
           <label htmlFor='name'>Last Name</label>
           <input
             type='text'
-            id='name'
+            id='lname'
             value={lastNameValue}
             onChange={lastNameChangeHandler}
             onBlur={lastNameBlurHandler}
@@ -84,7 +84,7 @@ const BasicForm = (props) => {
         <label htmlFor='name'>E-Mail Address</label>
         <input
           type='text'
-          id='name'
+          id='email'
           value={emailValue}
           onChange={emailChangeHandler}
           onBlur={emailBlurHandler}
